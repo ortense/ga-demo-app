@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47449214-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-47449214-1', {
+    'custom_map': {
+      'dimension1': 'error_stack',
+      'dimension2': 'component_stack'
+    }
+  });
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo App</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="index.js"></script>
+  <script>
+    setTimeout(() => {
+      location.href = location.href
+    }, 20000)
+  </script>
+</body>
+</html>
