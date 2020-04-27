@@ -5,12 +5,12 @@ import {DemoApp} from './DemoApp'
 
 import './main.css'
 
-window.addEventListener('error', function(event) {
-  event.error && gtag('event', 'exception', {
-    'description': `${event.error.name}: ${event.error.message}`,
-    'fatal': false,
-    'error_stack': event.error.stack
-  });  
+window.addEventListener('error', (event) => {
+  gtag('event', 'exception', {
+    description: `${event.error.name}: ${event.error.message}`,
+    fatal: false,
+    error_stack: event.error.stack
+  })
 })
 
 gtag('event', 'timing_complete', {

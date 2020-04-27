@@ -18,22 +18,9 @@ export function DemoApp() {
   }, [])
 
   return <React.Fragment>
-    <h1>Olá! { hasError ? '😧' : '😎'}</h1>
-    {
-      data
-      ? <React.Fragment>
-          <p>Dados obtidos via api:</p>
-          <pre>
-            {data}
-          </pre>
-          <WaitForReaload/>
-        </React.Fragment>
-      : hasError
-        ? <React.Fragment>
-            <p>Ops! A request falhou!</p>
-            <WaitForReaload/>
-          </React.Fragment>
-        : <p>Aguardando dados externos...</p>
-    }
+    <h1>Muito obrigado! 😉</h1>
+    <p>Os testes já terminaram</p>
+    <p>Sem você essa apresentação não seria possível 😜</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IAO1CglKgu4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </React.Fragment>
 }
