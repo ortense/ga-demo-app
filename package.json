@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/index.html -d dev",
-    "build": "parcel build src/index.html"
+    "start": "parcel srcindex.html -d dev",
+    "build": "parcel build src/index.html --no-minify"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
